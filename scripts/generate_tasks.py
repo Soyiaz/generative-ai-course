@@ -21,7 +21,7 @@ except ImportError:
 
 
 class TaskGenerator:
-    def __init__(self, token: str, repo_name: str = "NERD-Community-Ethiopia/generative-ai-course"):
+    def __init__(self, token: str, repo_name: str = "Soyiaz/generative-ai-course"):
         self.github = Github(token)
         self.repo = self.github.get_repo(repo_name)
         self.week_templates = self._load_week_templates()
